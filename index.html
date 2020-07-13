@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registraion form</title>
+  </head>
+  <body style="background-color: #092532;">
+    <div
+      style="
+        background-color: #c7e2b2;
+        padding: 0 0 20px 0;
+        margin: 100px 300px;
+      "
+    >
+      <div style="padding: 20px 0 0 0; margin: auto;">
+        <h1
+          style="
+            color: #393e46;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+          "
+        >
+          REGISTRATION FORM
+        </h1>
+      </div>
+      <table style="text-align: left; margin: 0px auto; padding: 20px 0 0 0;">
+        <tr>
+          <td style="padding: 20px 0 0 0px;">
+            <label for="First Name">First Name</label>
+          </td>
+          <td style="padding: 20px 0 0 200px;">
+            <form action="" method="POST">
+              <input
+                type="text"
+                name="fname"
+                id="fname"
+                placeholder="First Name"
+              />
+            </form>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding: 20px 0 0 0;">
+            <label for="Last Name">Last Name</label>
+          </td>
+          <td style="padding: 20px 0 0 200px;">
+            <form action="" method="POST">
+              <input
+                type="text"
+                name="lname"
+                id="lname"
+                placeholder="Last Name"
+              />
+            </form>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding: 20px 0 0 0;">
+            <label for="DOB">Date of Birth</label>
+          </td>
+          <td style="padding: 20px 0 0 200px;">
+            <form action="" method="POST">
+              <input type="date" id="birthday" name="birthday" />
+            </form>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding: 20px 0 0 0;">
+            <label for="email">Email</label>
+          </td>
+          <td style="padding: 20px 0 0 200px;">
+            <form action="" method="POST">
+              <input type="email" name="email" id="email" placeholder="Email" />
+            </form>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding: 20px 0 0 0px;">
+            <label for="Address">Address</label>
+          </td>
+          <td style="padding: 20px 0 0 200px;">
+            <form action="" method="POST">
+              <textarea
+                name="address"
+                id="address"
+                cols="25"
+                placeholder="Address"
+                rows="5"
+              ></textarea>
+            </form>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding: 20px 0 0 0;">
+            <label for="Password">Password</label>
+          </td>
+          <td style="padding: 20px 0 0 200px;">
+            <form action="" method="POST">
+              <input
+                type="password"
+                name="Password"
+                id="Password"
+                placeholder="Password"
+              />
+            </form>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding: 20px 0 0 0;">
+            <label for="CPassword">Confirm Password</label>
+          </td>
+          <td style="padding: 20px 0 0 200px;">
+            <form action="" method="POST">
+              <input
+                type="cpassword"
+                name="CPassword"
+                id="CPassword"
+                placeholder="Confirm Password"
+              />
+            </form>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding: 20px 0 0 0;">
+            <label for="Gender">Gender</label>
+          </td>
+          <td style="padding: 20px 0 0 200px;">
+            <form action="" method="POST">
+              <input type="radio" id="male" name="gender" value="male" />
+              <label for="male">Male</label>
+              <input type="radio" id="female" name="gender" value="female" />
+              <label for="female">Female</label>
+              <input type="radio" id="other" name="gender" value="other" />
+              <label for="other">Other</label>
+            </form>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding: 20px 0 0 0;">
+            <label for="mobile">Mobile</label>
+          </td>
+          <td style="padding: 20px 0 0 200px;">
+            <form action="" method="POST">
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="+91-98756-12345"
+                pattern="[0-9]{5}-[0-9]{5}"
+                required
+              />
+            </form>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding: 20px 0 0 0;">
+            <label for="amobile">Alternate Mobile</label>
+          </td>
+          <td style="padding: 20px 0 0 200px;">
+            <form action="" method="POST">
+              <input
+                type="tel"
+                id="aphone"
+                name="phone"
+                placeholder="+91-98756-12345"
+                pattern="[0-9]{5}-[0-9]{5}"
+                required
+              />
+            </form>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding: 20px 0 0 0;">
+            <label for="City">City</label>
+          </td>
+          <td style="padding: 20px 0 0 200px;">
+            <form action="" method="POST">
+              <select name="city" id="city" placeholder="City">
+                <option value="Alappuzha">Alappuzha</option>
+                <option value="Aluva">Aluva</option>
+                <option value="Chavakkad">Chavakkad</option>
+                <option value="Cherthala">Cherthala</option>
+                <option value="	Kalpetta">Kalpetta</option>
+                <option value="Kottakkal">Kottakkal</option>
+                <option value="Kottayam">Kottayam</option>
+                <option value="Kozhikode">Kozhikode</option>
+                <option value="	Manjeri">Manjeri</option>
+                <option value="Malappuram">Malappuram</option>
+                <option value="Ottappalam">Ottappalam</option>
+                <option value="Palakkad">Palakkad</option>
+                <option value="Punalur">Punalur</option>
+                <option value="	Ponnani">Ponnani</option>
+              </select>
+            </form>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding: 20px 0 0 0;">
+            <label for="zcode">Zip Code</label>
+          </td>
+          <td style="padding: 20px 0 0 200px;">
+            <form action="" method="POST">
+              <input
+                type="text"
+                id="zcode"
+                pattern="[0-9]{6}"
+                placeholder="690106"
+                required
+              />
+            </form>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding: 20px 0 0 0px;">
+            <label for="Image">Image</label>
+          </td>
+          <td style="padding: 20px 0 0 0px;">
+            <form action="" method="POST" style="padding: 20px;">
+              <input type="file" name="fileToUpload" id="fileToUpload" />
+              <input type="submit" value="Upload Image" name="submit" />
+            </form>
+          </td>
+        </tr>
+      </table>
+      <div style="padding: 50px 0 0 0; text-align: center;">
+        <form action="" method="POST">
+          <button
+            type="button"
+            onclick="alert('Successfully Registered the account!')"
+            style="background-color: wheat;"
+          >
+            <strong>
+              REGISTER
+            </strong>
+          </button>
+        </form>
+      </div>
+      <div style="padding: 20px 0 0 0; text-align: center;">
+        <strong>
+          <a href="feedback.html">Feedback</a> |
+          <a href="contact.html">Contact Us</a>
+        </strong>
+      </div>
+    </div>
+  </body>
+</html>

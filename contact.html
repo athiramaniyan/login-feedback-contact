@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+  </head>
+  <body style="background-color: #092532;">
+    <div style="background-color: #c7e2b2; margin: 100px 300px;">
+      <div style="padding: 20px 0 0 0; margin: auto;">
+        <h1
+          style="
+            color: #393e46;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+          "
+        >
+          Contact Us
+        </h1>
+      </div>
+      <table style="text-align: left; margin: 0px auto; padding: 20px 0 0 0;">
+        <tr>
+          <td style="padding: 20px 0 0 0p;">
+            <label for="First Name">First Name</label>
+          </td>
+          <td style="padding: 20px 0 0 40px;">
+            <form action="" method="POST">
+              <input
+                type="text"
+                name="fname"
+                id="fname"
+                placeholder="First Name"
+              />
+              <input
+                type="text"
+                name="lname"
+                id="lname"
+                placeholder="Last Name"
+              />
+            </form>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding: 20px 0 0 0;">
+            <label for="email">Email</label>
+          </td>
+          <td style="padding: 20px 0 0 40px;">
+            <form action="" method="POST">
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Email"
+                style="width: 410px;"
+              />
+            </form>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding: 20px 0 0 0;">
+            <label for="mobile">Mobile</label>
+          </td>
+          <td style="padding: 20px 0 0 40px;">
+            <form action="" method="POST">
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="928"
+                pattern="[0-9]{3}"
+                required
+                style="width: 120px;"
+              />
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="345"
+                pattern="[0-9]{3}"
+                required
+                style="width: 120px;"
+              />
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="2345"
+                pattern="[0-9]{4}"
+                required
+                style="width: 125px;"
+              />
+            </form>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding: 20px 0 0 0;">
+            <label for="Message">Message Subject</label>
+          </td>
+          <td style="padding: 20px 0 0 40px;">
+            <form action="" method="POST">
+              <select name="msg" id="msg" placeholder="Message">
+                <option value="Fee">Fee Enquiry</option>
+                <option value="Academic">Academic Curriculum Enquiry</option>
+                <option value="PTA">PTA Fund Enquiry</option>
+                <option value="Seat">Merit/Mangement Seat Enquiry</option>
+                <option value="Admission">Admission Help desk</option>
+                <option value="Faculty">Faculty Enquiry</option>
+                <option value="others">others</option>
+              </select>
+            </form>
+          </td>
+        </tr>
+
+        <tr>
+          <td style="padding: 20px 0 0 0px;">
+            <label for="Message">Message</label>
+          </td>
+          <td style="padding: 20px 0 0 40px;">
+            <form action="" method="POST">
+              <textarea
+                name="Message"
+                id="Message"
+                cols="25"
+                placeholder="Message"
+                rows="5"
+              ></textarea>
+            </form>
+          </td>
+        </tr>
+      </table>
+      <div style="padding: 50px 0 0 50px; text-align: center;">
+        <form action="" method="POST" style="padding-bottom: 40px;">
+          <button
+            type="button"
+            onclick="alert('Message Sent!')"
+            style="background-color: wheat;"
+          >
+            <strong>
+              SUBMIT
+            </strong>
+          </button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
