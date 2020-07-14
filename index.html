@@ -13,6 +13,7 @@
         margin: 100px 300px;
       "
     >
+<!-------------------------------------Heading-------------------------------------------------------->
       <div style="padding: 20px 0 0 0; margin: auto;">
         <h1
           style="
@@ -25,87 +26,98 @@
         </h1>
       </div>
       <table style="text-align: left; margin: 0px auto; padding: 20px 0 0 0;">
+<!-------------------------------------First Name-------------------------------------------------------->
         <tr>
           <td style="padding: 20px 0 0 0px;">
             <label for="First Name">First Name</label>
           </td>
           <td style="padding: 20px 0 0 200px;">
-            <form action="" method="POST">
+            <form action="" method="POST" autocomplete="off" name="registrationform">
               <input
                 type="text"
-                name="fname"
-                id="fname"
+                name="txtfname"
+                id="txtfname"
                 placeholder="First Name"
+                required
               />
             </form>
           </td>
         </tr>
+<!---------------------------------------Last Name-------------------------------------------------------->
         <tr>
           <td style="padding: 20px 0 0 0;">
             <label for="Last Name">Last Name</label>
           </td>
           <td style="padding: 20px 0 0 200px;">
-            <form action="" method="POST">
+            <form action="" method="POST" autocomplete="off" name="registrationform">
               <input
                 type="text"
-                name="lname"
-                id="lname"
+                name="txtlname"
+                id="txtlname"
                 placeholder="Last Name"
+                required
               />
             </form>
           </td>
         </tr>
+<!---------------------------------------Date of Birth-------------------------------------------------------->
         <tr>
           <td style="padding: 20px 0 0 0;">
             <label for="DOB">Date of Birth</label>
           </td>
           <td style="padding: 20px 0 0 200px;">
-            <form action="" method="POST">
-              <input type="date" id="birthday" name="birthday" />
+            <form action="" method="POST" autocomplete="off" name="registrationform">
+              <input type="date" id="birthday" name="birthday" required />
             </form>
           </td>
         </tr>
+<!------------------------------------------Email-------------------------------------------------------->
         <tr>
           <td style="padding: 20px 0 0 0;">
             <label for="email">Email</label>
           </td>
           <td style="padding: 20px 0 0 200px;">
-            <form action="" method="POST">
-              <input type="email" name="email" id="email" placeholder="Email" />
+            <form action="" method="POST" autocomplete="off" name="registrationform">
+              <input type="email" name="email" id="email" placeholder="Email" required />
             </form>
           </td>
         </tr>
+<!-------------------------------------------Address-------------------------------------------------------->
         <tr>
           <td style="padding: 20px 0 0 0px;">
             <label for="Address">Address</label>
           </td>
           <td style="padding: 20px 0 0 200px;">
-            <form action="" method="POST">
+            <form action="" method="POST" autocomplete="off" name="registrationform">
               <textarea
                 name="address"
                 id="address"
                 cols="25"
                 placeholder="Address"
                 rows="5"
+                required
               ></textarea>
             </form>
           </td>
         </tr>
+<!--------------------------------------------Password------------------------------------------------------->
         <tr>
           <td style="padding: 20px 0 0 0;">
             <label for="Password">Password</label>
           </td>
           <td style="padding: 20px 0 0 200px;">
-            <form action="" method="POST">
+            <form action="" method="POST" autocomplete="off" name="registrationform">
               <input
                 type="password"
                 name="Password"
                 id="Password"
                 placeholder="Password"
+                required
               />
             </form>
           </td>
         </tr>
+<!-------------------------------------Confirm Password-------------------------------------------------------->
         <tr>
           <td style="padding: 20px 0 0 0;">
             <label for="CPassword">Confirm Password</label>
@@ -113,20 +125,22 @@
           <td style="padding: 20px 0 0 200px;">
             <form action="" method="POST">
               <input
-                type="cpassword"
+                type="password"
                 name="CPassword"
                 id="CPassword"
                 placeholder="Confirm Password"
+                required
               />
             </form>
           </td>
         </tr>
+<!----------------------------------------------Gender-------------------------------------------------------->
         <tr>
           <td style="padding: 20px 0 0 0;">
             <label for="Gender">Gender</label>
           </td>
           <td style="padding: 20px 0 0 200px;">
-            <form action="" method="POST">
+            <form action="" method="POST" autocomplete="off" name="registrationform">
               <input type="radio" id="male" name="gender" value="male" />
               <label for="male">Male</label>
               <input type="radio" id="female" name="gender" value="female" />
@@ -136,12 +150,13 @@
             </form>
           </td>
         </tr>
+<!----------------------------------------------Mobile-------------------------------------------------------->
         <tr>
           <td style="padding: 20px 0 0 0;">
             <label for="mobile">Mobile</label>
           </td>
           <td style="padding: 20px 0 0 200px;">
-            <form action="" method="POST">
+            <form action="" method="POST" autocomplete="off" name="registrationform">
               <input
                 type="tel"
                 id="phone"
@@ -153,12 +168,13 @@
             </form>
           </td>
         </tr>
+<!-------------------------------------Alternate Mobile-------------------------------------------------------->
         <tr>
           <td style="padding: 20px 0 0 0;">
             <label for="amobile">Alternate Mobile</label>
           </td>
           <td style="padding: 20px 0 0 200px;">
-            <form action="" method="POST">
+            <form action="" method="POST" autocomplete="off" name="registrationform">
               <input
                 type="tel"
                 id="aphone"
@@ -170,13 +186,14 @@
             </form>
           </td>
         </tr>
+<!-----------------------------------------------City-------------------------------------------------------->
         <tr>
           <td style="padding: 20px 0 0 0;">
             <label for="City">City</label>
           </td>
           <td style="padding: 20px 0 0 200px;">
-            <form action="" method="POST">
-              <select name="city" id="city" placeholder="City">
+            <form action="" method="POST" autocomplete="off" name="registrationform">
+              <select name="city" id="city" placeholder="City" required>
                 <option value="Alappuzha">Alappuzha</option>
                 <option value="Aluva">Aluva</option>
                 <option value="Chavakkad">Chavakkad</option>
@@ -195,14 +212,15 @@
             </form>
           </td>
         </tr>
+<!--------------------------------------------Zip Code-------------------------------------------------------->
         <tr>
           <td style="padding: 20px 0 0 0;">
             <label for="zcode">Zip Code</label>
           </td>
           <td style="padding: 20px 0 0 200px;">
-            <form action="" method="POST">
+            <form action="" method="POST" autocomplete="off" name="registrationform">
               <input
-                type="text"
+                type="tel"
                 id="zcode"
                 pattern="[0-9]{6}"
                 placeholder="690106"
@@ -211,18 +229,20 @@
             </form>
           </td>
         </tr>
+<!----------------------------------------------Image------------------------------------------------------------->
         <tr>
           <td style="padding: 20px 0 0 0px;">
             <label for="Image">Image</label>
           </td>
           <td style="padding: 20px 0 0 0px;">
-            <form action="" method="POST" style="padding: 20px;">
-              <input type="file" name="fileToUpload" id="fileToUpload" />
-              <input type="submit" value="Upload Image" name="submit" />
+            <form action="" method="POST" style="padding: 20px;" autocomplete="off" name="registrationform">
+              <input type="file" name="fileToUpload" id="fileToUpload" required/>
+              <input type="submit" value="Upload Image" name="submit" required/>
             </form>
           </td>
         </tr>
       </table>
+<!------------------------------------------Register Button-------------------------------------------------------->
       <div style="padding: 50px 0 0 0; text-align: center;">
         <form action="" method="POST">
           <button
@@ -236,6 +256,7 @@
           </button>
         </form>
       </div>
+<!--------------------------------------------Navigation Bar-------------------------------------------------------->
       <div style="padding: 20px 0 0 0; text-align: center;">
        <nav>
         <strong>
@@ -247,3 +268,4 @@
     </div>
   </body>
 </html>
+<!-------------------------------------------------END-------------------------------------------------------->
